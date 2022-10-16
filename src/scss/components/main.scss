@@ -1,0 +1,32 @@
+
+
+.main-grid {
+    display: grid;
+    grid-template-areas: 
+        'racer mod'
+        'racer mod'
+        'track best'
+        'track best'
+    ;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.grid {
+    background-color: #4e4e4e;
+    list-style: none;
+    width: 8em;
+    border-radius: 10px;
+    
+}
+#racer-profile {
+    grid-area: racer;
+}
+#mod-list {
+    grid-area: mod;
+}
+#track-list {
+    grid-area: track;
+}
+#best-time {
+    grid-area: best;
+}

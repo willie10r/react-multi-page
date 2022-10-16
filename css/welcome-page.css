@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(78, 120, 79, 0.7254901961);
+  color: #f6f6f6;
+}
+
+.header,
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.header {
+  font-size: 50px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 25px;
+  font-size: 20px;
+}/*# sourceMappingURL=welcome-page.css.map */
