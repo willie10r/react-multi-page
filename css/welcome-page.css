@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(78, 120, 79, 0.7254901961);
+  background: linear-gradient(to right, #55c46e 0%, #0a270e 90%);
   color: #f6f6f6;
 }
 

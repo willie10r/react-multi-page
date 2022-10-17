@@ -1,9 +1,13 @@
-/*# sourceMappingURL=index.css.map */{
+body {
+  color: #f6f6f6;
+}
+
+.nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
-  background-color: #4e784f;
+  background: linear-gradient(to right, #55c46e 0%, #0a270e 90%);
   margin: 0px;
   height: 50px;
 }
@@ -14,7 +18,7 @@
 }
 
 body {
-  background-color: rgba(78, 120, 79, 0.7254901961);
+  background: linear-gradient(to right, #55c46e 0%, #0a270e 90%);
   color: #f6f6f6;
 }
 
@@ -22,41 +26,56 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .header {
-  font-size: 75px;
+  font-size: 50px;
 }
 
 .title {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #about {
   display: flex;
   justify-content: center;
-  margin: 50px 400px;
+  text-align: center;
+  padding: 0px 25px;
   font-size: 20px;
 }
 
 .main-grid {
   display: grid;
-  grid-template: auto;
+  grid-template-areas: "racer racer", "mod mod", "track track", "best best";
+  justify-content: center;
+  grid-gap: 10px;
 }
 
-.racer-profile {
+#racer-profile {
   grid-area: racer;
 }
 
-.mod-list {
+#mod-list {
   grid-area: mod;
 }
 
-.track-list {
+#track-list {
   grid-area: track;
 }
 
-.best-time {
+#best-time {
   grid-area: best;
+}
+
+.grid {
+  background-color: #4e4e4e;
+  list-style: none;
+  width: 15em;
+  border-radius: 10px;
+  height: 28em;
+}
+
+.prev-box {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

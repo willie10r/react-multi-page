@@ -7,8 +7,8 @@ const NavBar = () => {
         <div>
         <ul className='nav-bar'>
             <li className='nav-btn'><NavLink to='/'>Home</NavLink></li>
-            <li className='nav-btn'><NavLink to='/Main'>Main</NavLink></li>
-            <li className='nav-btn'><NavLink to='./Sign'>Sign</NavLink></li>
+            <li className='nav-btn'><NavLink to='/Main'>Racer's Room</NavLink></li>
+            <li className='nav-btn'><NavLink to='./Sign'>Sign In</NavLink></li>
         </ul>
         </div>
     )

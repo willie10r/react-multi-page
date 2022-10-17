@@ -3,20 +3,13 @@
 .main-grid {
     display: grid;
     grid-template-areas: 
-        'racer mod'
-        'racer mod'
-        'track best'
-        'track best'
+        'racer racer',
+        'mod mod',
+        'track track',
+        'best best'
     ;
     justify-content: center;
     grid-gap: 10px;
-}
-.grid {
-    background-color: #4e4e4e;
-    list-style: none;
-    width: 8em;
-    border-radius: 10px;
-    
 }
 #racer-profile {
     grid-area: racer;
@@ -29,4 +22,14 @@
 }
 #best-time {
     grid-area: best;
+}
+.grid {
+    background-color: #4e4e4e;
+    list-style: none;
+    width: 15em;
+    border-radius: 10px;
+    height: 28em;
+}
+.prev-box {
+    text-align: center;
 }

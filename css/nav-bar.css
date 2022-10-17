@@ -7,7 +7,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
-  background-color: #4e784f;
+  background: linear-gradient(to right, #55c46e 0%, #0a270e 90%);
   margin: 0px;
   height: 50px;
 }
