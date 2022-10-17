@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { ReactDOM } from 'react';
 
 const Sign = () => {
@@ -7,24 +7,31 @@ const Sign = () => {
     const racerType = useRef();
     const userName = useRef();
     const passkey = useRef();
-    const racerPro = {}
+    let raceprofile = '';
+
+    const [racerPro , setRacerPro ] = useState ([
+        {
+            name: '',
+            vehical:'',
+            racing: '',
+            user: '',
+            pass: ''
+        }
+    ]);
     
    
     const handleSubmit = (e) => {
         e.preventDefault();
-        const racerPro = {
+        setRacerPro( racerPro => [{
             name: racerName.current.value,
             vehical: reacerVehical.current.value,
             racing: racerType.current.value,
             user: userName.current.value,
             pass: passkey.current.value
-
-            
-         
-     
-         }
-       localStorage.setItem(1,racerPro);
-    console.log(localStorage.getItem(1));
+         }]);
+         raceprofile = localStorage.setItem(1, JSON.stringify(racerPro));
+         JSON.parse(raceprofile);
+    console.log(racerPro.name);
     }
     return (
     <div>
@@ -72,7 +79,7 @@ const Sign = () => {
        </form>
        <div>
         <ul>
-            <li>{JSON.stringify(localStorage.getItem(1))}</li>
+            <li>{}</li>
             <li>{racerPro.vehical}</li>
             <li>{racerPro.racing}</li>
             
